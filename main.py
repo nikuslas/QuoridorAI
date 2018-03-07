@@ -51,6 +51,8 @@ def main():
     barreList.append(barre)
     barreList.append(barre4)
 
+    print("test")
+
     board.drawBarre(barre3.barreCoord)
     board.drawBarre(barre2.barreCoord)
     board.drawBarre(barre.barreCoord)
