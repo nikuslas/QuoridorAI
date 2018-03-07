@@ -11,8 +11,6 @@ board = Plateforme(root, pion)
 board.placePiece()
 barreList = []
 
-def callback(event):
-    print "clicked at", event.x, event.y
 
 def key(event):
     k=event.keysym
@@ -60,7 +58,7 @@ def main():
     board.drawBarre(barre4.barreCoord)
 
     board.focus_set()
-    board.bind("<Button-1>", callback)
+    """board.bind("<Button-1>", callback)"""
     board.bind("<Key>", key)
     board.pack(side="top", fill="both", expand="true", padx=4, pady=4)
     root.mainloop()
